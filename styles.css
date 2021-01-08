@@ -39,6 +39,7 @@ body {
 }
 
 .SubscribeBox__button {
+    outline: none;
     cursor: pointer;
     padding: 10px 16px;
     font-size: 16px;
@@ -51,6 +52,10 @@ body {
 
 .SubscribeBox__button:hover {
     opacity: 0.75;
+}
+
+.SubscribeBox__button:focus {
+    box-shadow: 0 0 5px  rgb(37, 154, 54);
 }
 
 
