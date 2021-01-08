@@ -11,20 +11,31 @@ body {
     border-radius: 8px;
 }
 
+.SubscribeBox__email {
+    margin-bottom: 16px;
+}
 
 .SubscribeBox__emailTitle {
-    margin: 0;
+    margin: 0 0 5px 0;
     font-size: 16px;
 }
 .SubscribeBox__emailInput {
+    outline: none;
     margin-top: 4px;
-    margin-bottom: 16px;
     width: 100%;
     padding: 10px;
     font-size: 16px;
     font-weight: 100;
     border-radius: 4px;
     border: 1px solid rgb(206, 212, 218);
+    transition: box-shadow 0.1s ease;
+}
+
+.SubscribeBox__emailError {
+    display: none;
+    margin-top: 4px;
+    font-size: 15px;
+    color: rgb(216, 68, 88);
 }
 
 .SubscribeBox__button {
@@ -60,10 +71,10 @@ body {
 
 }
 
-.SubscribeBox__innerTitle {
+.SuccessfulBox__innerTitle {
     margin-bottom: 0;
 }
 
-.SubscribeBox__innerText {
+.SuccessfulBox__innerText {
     margin-top: 6px;
 }

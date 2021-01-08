@@ -9,16 +9,27 @@
     <body>
         <div class="SubscribeBox">
             <h1>Subscribe Now!</h1>
-            <div>
+            <div class="SubscribeBox__email">
                 <p class="SubscribeBox__emailTitle">Email address</p>
-                <input class="SubscribeBox__emailInput" type="text" />
+                <input
+                    class="SubscribeBox__emailInput"
+                    type="text"
+                    name="email"
+                    onfocus="onEmailFocused(this)"
+                    onblur="onEmailBlurred(this)"
+                />
+                <p class="SubscribeBox__emailError">
+                    A valid email is required
+                </p>
             </div>
-            <button class="SubscribeBox__button">Subscribe</button>
+            <button class="SubscribeBox__button" onclick="onSubscribeClicked()">
+                Subscribe
+            </button>
         </div>
         <div class="SuccessfulBox">
             <div class="SuccessfulBox__inner">
-                <h2 class="SubscribeBox__innerTitle">Thank you</h2>
-                <p class="SubscribeBox__innerText">
+                <h2 class="SuccessfulBox__innerTitle">Thank you</h2>
+                <p class="SuccessfulBox__innerText">
                     Your subscription was a succes!
                 </p>
             </div>
